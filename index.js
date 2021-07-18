@@ -18,6 +18,7 @@ function checkForLowerCase(password){
         if (password[i] >= "a" && password[i] <="z"){
             return true
         }
+        return false
     }
 
 function checkForLength(password){
@@ -34,6 +35,7 @@ function checkForUpperCase(password) {
         }
     }
 }
+return false
 }
 
 function checkForNumber(password) {
@@ -42,7 +44,18 @@ function checkForNumber(password) {
             return true
         }
     }
+    return false
 }
+
+function checkSpecialCharacter(password) {
+    var specialcharacters ="!@#$%^&*()-_"
+    for (var i = 0; i < passwordLength; i++){
+        if (specialcharacters.includes(password[i])){
+            return true
+        }
+    }
+    return false
+    }
 
 
 
