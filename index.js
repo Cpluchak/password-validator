@@ -11,7 +11,7 @@ let checkCharacter = false
     checkCharacter = checkSpecialCharacter(password)
     return lowerCase && passwordLength && upperCase && checkNumber && checkCharacter
 }
-module.exports = validatePassword
+
 
 function checkForLowerCase(password){
     for (var i = 0; i < password.length; i++){
@@ -29,9 +29,15 @@ function checkForLength(password){
 
 function checkForUpperCase(password) {
     for (var i = 0; i < passwordLength; i++){
-        if (password[i] >= "a" && password[i] <="z"){
-            return false
+        if (password[i] >= "A" && password[i] <="Z"){
+            return true
         }
     }
+}
+}
 
-    
+function checkForNumber(password) {
+
+}
+
+
