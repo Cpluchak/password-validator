@@ -37,7 +37,12 @@ function checkForUpperCase(password) {
 }
 
 function checkForNumber(password) {
-
+    for (var i = 0; i < passwordLength; i++){
+        if (password[i] >= 0 && password[i] <= 9){
+            return true
+        }
+    }
 }
+
 
 
