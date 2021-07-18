@@ -17,7 +17,21 @@ function checkForLowerCase(password){
     for (var i = 0; i < password.length; i++){
         if (password[i] >= "a" && password[i] <="z"){
             return true
-    }
+        }
     }
 
+function checkForLength(password){
+    if (password.length < 8) {
+        return false
+    }
+    return true
+}
 
+function checkForUpperCase(password) {
+    for (var i = 0; i < passwordLength; i++){
+        if (password[i] >= "a" && password[i] <="z"){
+            return false
+        }
+    }
+
+    
